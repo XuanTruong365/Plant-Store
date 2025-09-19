@@ -1,13 +1,13 @@
 <script setup>
 import { ref } from "vue";
-import ImageBanner from "../assets/images/img-banner3.jpeg";
-import BannerTop from "../components/BannerTop.vue";
+import ImageBanner from "../../assets/images/img-banner3.jpeg";
+import BannerTop from "../../components/BannerTop.vue";
 
 // Fake data demo
 const blogs = ref([
     {
         id: 1,
-        title: "Top 10 Indoor Plants to Purify Your Air",
+        title: "Top 10 indoor Plants to Purify Your Air",
         excerpt:
             "Discover the best indoor plants that not only beautify your space but also improve air quality...",
         image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
@@ -34,7 +34,7 @@ const blogs = ref([
     },
     {
         id: 4,
-        title: "Top 10 Indoor Plants to Purify Your Air",
+        title: "Top 10 indoor Plants to Purify Your Air",
         excerpt:
             "Discover the best indoor plants that not only beautify your space but also improve air quality...",
         image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
@@ -85,12 +85,9 @@ const blogs = ref([
                             <span>✍️ {{ post.author }}</span>
                             <span>{{ post.date }}</span>
                         </div>
-                        <a
-                                :href="`/blog/${post.id}`"
-                                class="mt-4 inline-block text-green-600 font-medium hover:underline"
-                        >
+                        <router-link :to="`/blog/${post.id}`" class="mt-4 inline-block text-green-600 font-medium hover:underline">
                             Read more →
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>

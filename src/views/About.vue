@@ -1,5 +1,7 @@
 <template>
   <div class="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <BannerTop title="About" :image="ImageBanner" />
+
     <!-- Hero -->
     <section class="text-center py-16 px-6">
       <h1 class="text-4xl md:text-5xl font-bold text-green-700">Liên hệ với TruongDev</h1>
@@ -93,4 +95,6 @@
 </template>
 
 <script setup>
+import ImageBanner from "../assets/images/img-banner2.jpeg";
+import BannerTop from "../components/BannerTop.vue";
 </script>

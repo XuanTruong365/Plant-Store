@@ -79,7 +79,7 @@ import ImagePlantsPeople from '../assets/images/Vector.png';
 import {IconDown, IconDownRight, IconTopRight} from "../assets/icons.js";
 import {useRoute} from "vue-router";
 import Product from "../components/products/Product.vue";
-import IndoorCollection from "../components/Indoor/IndoorCollection.vue";
+import IndoorCollection from "../components/indoor/IndoorCollection.vue";
 import FaqItem from "../components/FaqItem.vue";
 import PlantIntroduction from "../components/PlantIntroduction.vue";
 import PlantCategory from "../components/PlantCategory.vue";

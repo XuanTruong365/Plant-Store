@@ -1,5 +1,6 @@
 <template>
-    <div class="min-h-screen pt-[154px]">
+    <div class="min-h-screen">
+        <BannerTop :image="ImageBanner" />
         <!-- Hero -->
         <section class="container mx-auto my-8 px-4 flex flex-col lg:flex-row gap-10">
             <!-- Image Gallery -->
@@ -143,6 +144,8 @@ import ProductCard from "./ProductCard.vue";
 import Background from "../../assets/images/Background.png";
 import CartDrawer from "../CartDrawer.vue";
 import { useCartStore } from "../../stores/cart.js";
+import ImageBanner from "../../assets/images/img-banner6.jpeg";
+import BannerTop from "../BannerTop.vue";
 
 const products = [
     {

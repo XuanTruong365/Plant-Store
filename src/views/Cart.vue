@@ -1,6 +1,6 @@
 <template>
-    <div class="container mx-auto px-4 pb-8 pt-[174px]">
-        <BannerTop title="Shopping Cart" :image="ImageBanner" />
+    <BannerTop title="Shopping Cart" :image="ImageBanner" />
+    <div class="container mx-auto px-4 pb-8 pt-4">
         <!-- Cart Items -->
         <div class="bg-white rounded-lg shadow p-6 mb-8">
             <h2 class="text-2xl font-bold text-center mb-6 border-b pb-2">
@@ -117,7 +117,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import ImageBanner from "../assets/images/img-banner3.jpeg";
+import ImageBanner from "../assets/images/img-banner5.jpeg";
 import BannerTop from "../components/BannerTop.vue";
 
 const cartItems = ref([
