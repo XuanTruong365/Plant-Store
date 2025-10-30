@@ -1,9 +1,10 @@
 <template>
     <div class="min-h-screen">
         <BannerTop :image="ImageBanner" />
+
         <!-- Hero -->
         <section class="container mx-auto my-8 px-4 flex flex-col lg:flex-row gap-10">
-            <!-- Image Gallery -->
+            <!-- Thư viện hình ảnh -->
             <div class="w-full max-w-[500px] mx-auto lg:mx-0">
                 <Swiper
                     class="rounded-2xl shadow-md"
@@ -17,7 +18,7 @@
                     </SwiperSlide>
                 </Swiper>
 
-                <!-- Thumbnails -->
+                <!-- Ảnh nhỏ -->
                 <Swiper
                     class="mt-4"
                     :modules="[Thumbs]"
@@ -37,11 +38,11 @@
                 </Swiper>
             </div>
 
-            <!-- Product Info -->
+            <!-- Thông tin sản phẩm -->
             <div class="flex flex-col gap-6">
                 <h1 class="text-3xl font-bold text-gray-800">{{ product.name }}</h1>
 
-                <!-- Price -->
+                <!-- Giá -->
                 <div class="flex items-center gap-3">
                     <span class="text-2xl font-bold text-green-700">${{ product.price }}</span>
                     <span v-if="product.oldPrice" class="line-through text-gray-400">${{ product.oldPrice }}</span>
@@ -50,9 +51,9 @@
 
                 <p class="text-gray-600">{{ product.description }}</p>
 
-                <!-- Quantity -->
+                <!-- Số lượng -->
                 <div class="flex items-center gap-4">
-                    <label class="font-semibold">Quantity:</label>
+                    <label class="font-semibold">Số lượng:</label>
                     <div class="flex items-center border rounded-lg overflow-hidden">
                         <button @click="decreaseQty" class="px-3 py-1 bg-gray-100 hover:bg-gray-200">-</button>
                         <input type="number" v-model="quantity" class="w-12 text-center outline-none" />
@@ -60,31 +61,31 @@
                     </div>
                 </div>
 
-                <!-- Options -->
+                <!-- Tùy chọn chậu cây -->
                 <div>
-                    <label class="font-semibold">Include Planter:</label>
+                    <label class="font-semibold">Bao gồm chậu cây:</label>
                     <select v-model="planter" class="ml-2 border rounded-lg px-3 py-2">
-                        <option>Yes</option>
-                        <option>No</option>
+                        <option>Có</option>
+                        <option>Không</option>
                     </select>
                 </div>
 
-                <!-- CTA -->
+                <!-- Nút thêm vào giỏ -->
                 <button
                     @click="addToCart"
                     class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl"
                 >
-                    Add to Cart
+                    Thêm vào giỏ
                 </button>
 
                 <CartDrawer />
 
-                <!-- Delivery -->
+                <!-- Giao hàng -->
                 <div class="space-y-2">
-                    <label class="font-semibold">Delivery</label>
+                    <label class="font-semibold">Giao hàng</label>
                     <div class="flex gap-3">
-                        <input v-model="pincode" type="text" placeholder="Enter Pincode" class="flex-1 border rounded-lg px-3 py-2" />
-                        <button @click="checkDelivery" class="px-4 bg-gray-800 text-white rounded-lg hover:bg-black">Check</button>
+                        <input v-model="pincode" type="text" placeholder="Nhập mã bưu điện" class="flex-1 border rounded-lg px-3 py-2" />
+                        <button @click="checkDelivery" class="px-4 bg-gray-800 text-white rounded-lg hover:bg-black">Kiểm tra</button>
                     </div>
                     <p v-if="deliveryMessage" class="text-sm text-gray-500">{{ deliveryMessage }}</p>
                 </div>
@@ -113,14 +114,14 @@
                 <div class="mt-6 bg-white rounded-xl shadow p-6">
                     <p v-if="activeTab === 'Care Guide'">{{ product.careGuide }}</p>
                     <p v-if="activeTab === 'Plant Bio'">{{ product.bio }}</p>
-                    <p v-if="activeTab === 'Reviews'">⭐️⭐️⭐️⭐️☆ (24 reviews)</p>
+                    <p v-if="activeTab === 'Reviews'">⭐️⭐️⭐️⭐️☆ (24 đánh giá)</p>
                 </div>
             </div>
         </section>
 
-        <!-- Related -->
+        <!-- Sản phẩm liên quan -->
         <section class="container mx-auto px-4 py-12">
-            <h2 class="text-2xl font-bold text-center mb-8">You May Also Like...</h2>
+            <h2 class="text-2xl font-bold text-center mb-8">Bạn cũng có thể thích...</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 <div v-for="(related, idx) in relatedProducts" :key="idx">
                     <ProductCard :product="related" />

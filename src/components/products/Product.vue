@@ -50,41 +50,42 @@ import ImgProduct3 from "../../assets/images/product-img3.png";
 const products = [
     {
         image: ImgProduct1,
-        title: "Peperomia Plants",
-        description: "Moist but well-drained",
+        title: "Cây Peperomia",
+        description: "Đất ẩm nhưng thoát nước tốt",
         price: "₹122,056",
     },
     {
         image: ImgProduct2,
-        title: "Fiddle-Leaf Fig",
-        description: "Moist but well-drained",
+        title: "Cây Fiddle-Leaf Fig",
+        description: "Đất ẩm nhưng thoát nước tốt",
         price: "₹162,056",
     },
     {
         image: ImgProduct3,
-        title: "Calathea Orbifolia",
-        description: "Moist but well-drained",
+        title: "Cây Calathea Orbifolia",
+        description: "Đất ẩm nhưng thoát nước tốt",
         price: "₹102,056",
     },
     {
         image: ImgProduct1,
-        title: "Snake Plant",
-        description: "Low maintenance",
+        title: "Cây Lưỡi Hổ",
+        description: "Dễ chăm sóc",
         price: "₹82,500",
     },
     {
         image: ImgProduct2,
-        title: "Monstera Deliciosa",
-        description: "Tropical vibes",
+        title: "Cây Monstera Deliciosa",
+        description: "Mang cảm giác nhiệt đới",
         price: "₹142,700",
     },
     {
         image: ImgProduct3,
-        title: "ZZ Plant",
-        description: "Thrives in low light",
+        title: "Cây ZZ",
+        description: "Phát triển tốt trong bóng râm",
         price: "₹99,900",
     },
 ];
+
 </script>
 
 <style scoped>

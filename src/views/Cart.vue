@@ -1,5 +1,5 @@
 <template>
-    <BannerTop title="Shopping Cart" :image="ImageBanner" />
+    <BannerTop title="Giỏ Hàng Mua Sắm" :image="ImageBanner" />
     <div class="container mx-auto px-4 pb-8 pt-4">
         <!-- Cart Items -->
         <div class="bg-white rounded-lg shadow p-6 mb-8">

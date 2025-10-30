@@ -1,21 +1,31 @@
-# Node modules
-/node_modules
+# =========================
+# Vue 3 / Node.js
+# =========================
 
-# Build output
-/dist
-/build
+# Dependencies
+/node_modules/
 
-# Local env files
+# Build outputs
+/dist/
+/build/
+/coverage/
+
+# Local environment variables
+.env
 .env.local
 .env.*.local
+.env.development.local
+.env.production.local
+.env.test.local
 
-# Log files
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.log
 
-# Editor directories and files
+# Editor settings
 .idea/
 .vscode/
 *.suo
@@ -24,10 +34,35 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# Mac system files
+# System files
 .DS_Store
+Thumbs.db
 
-# Optional: lock files (tùy team có thể giữ lại)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# Cache
+/.cache/
+/.cache-loader/
+/tmp/
+/temp/
+/vite-cache/
+/vite.config.ts.timestamp-*
+
+# Testing
+/jest/
+jest-cache/
+coverage/
+
+# Lint cache
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: lock files (tùy chính sách team)
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+
+# Local previews / storybook
+/storybook-static/
+*.local
+*.preview

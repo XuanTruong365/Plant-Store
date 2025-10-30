@@ -1,32 +1,32 @@
 <template>
     <div ref="cartRef" class="relative">
-        <!-- Cart Button -->
+        <!-- Nút giỏ hàng -->
         <button @click="toggleCart"
                 class="w-10 h-10 md:w-[60px] md:h-[60px] flex items-center justify-center border rounded-full hover:bg-white/10 transition"
                 v-html="IconCart">
         </button>
 
-        <!-- Cart Count -->
+        <!-- Số lượng trong giỏ -->
         <span v-if="cartCount > 0"
               class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md">
       {{ cartCount }}
     </span>
 
-        <!-- Popup -->
+        <!-- Popup giỏ hàng -->
         <transition name="fade">
             <div v-if="showCart"
                  class="absolute top-full right-0 mt-2 w-72 md:w-80 bg-white rounded-xl shadow-xl p-4 z-50 border border-gray-200">
 
                 <!-- Header -->
-                <h2 class="text-lg font-semibold mb-2 border-b border-gray-200 pb-2">Shopping Cart</h2>
+                <h2 class="text-lg font-semibold mb-2 border-b border-gray-200 pb-2">Giỏ Hàng</h2>
 
-                <!-- Cart Items -->
+                <!-- Danh sách sản phẩm -->
                 <ul class="divide-y divide-gray-200 max-h-64 overflow-y-auto mb-4">
                     <li v-for="(item, index) in cartItems" :key="index" class="py-2 flex items-center gap-3">
-                        <!-- Product Image -->
-                        <img :src="item.image" alt="Product Image" class="w-12 h-12 rounded object-cover">
+                        <!-- Ảnh sản phẩm -->
+                        <img :src="item.image" alt="Ảnh sản phẩm" class="w-12 h-12 rounded object-cover">
 
-                        <!-- Name + Price -->
+                        <!-- Tên + Giá -->
                         <div class="flex-1 flex justify-between items-center">
                             <span class="text-sm font-medium">{{ item.name }}</span>
                             <span class="text-sm font-semibold">{{ item.price }}</span>
@@ -34,14 +34,14 @@
                     </li>
                 </ul>
 
-                <!-- Checkout Button -->
+                <!-- Nút thanh toán -->
                 <button @click="handleCheckout" class="w-full bg-green-600 text-white rounded-lg py-2 hover:bg-green-700 transition mb-2">
-                    Checkout
+                    Thanh Toán
                 </button>
 
-                <!-- Continue Shopping Link -->
+                <!-- Link tiếp tục mua sắm -->
                 <p class="text-center text-sm">
-                    <a href="/shop" class="text-green-600 hover:underline">Continue Shopping</a>
+                    <a href="/shop" class="text-green-600 hover:underline">Tiếp tục mua sắm</a>
                 </p>
             </div>
         </transition>

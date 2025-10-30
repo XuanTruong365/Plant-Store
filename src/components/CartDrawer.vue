@@ -6,7 +6,7 @@
         >
             <!-- Header -->
             <div class="flex justify-between items-center p-4 border-b">
-                <h2 class="font-bold text-lg">Your Cart</h2>
+                <h2 class="font-bold text-lg">Giỏ Hàng Của Bạ </h2>
                 <button @click="cart.toggleDrawer(false)" class="text-gray-500">✕</button>
             </div>
 
@@ -33,12 +33,12 @@
                         @click="goToCart"
                         class="w-full bg-green-600 text-white py-2 rounded-lg mb-2"
                 >
-                    Go to Cart
+                    Đi Đến Giỏ Hàng
                 </button>
                 <button
                         class="w-full bg-gray-200 py-2 rounded-lg"
                 >
-                    Checkout
+                    Thanh Toán
                 </button>
             </div>
         </div>

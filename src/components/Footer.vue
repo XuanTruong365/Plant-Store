@@ -11,7 +11,7 @@ import { Logo } from "../assets/icons.js";
         <img
             class="w-full h-full object-cover"
             :src="ImgFooter"
-            alt="Footer background"
+            alt="Nền footer"
         />
 
         <!-- Content -->
@@ -31,13 +31,13 @@ import { Logo } from "../assets/icons.js";
             <h2
                 class="text-white text-xl sm:text-3xl md:text-[93px] font-semibold tracking-tighter leading-tight"
             >
-                Join the Community!
+                Tham Gia Cộng Đồng!
             </h2>
             <p
                 class="w-full max-w-[90%] md:max-w-[640px] text-white text-xs sm:text-sm md:text-[24px] tracking-tight"
             >
-                Subscribe to The Forager to receive monthly plant tips, store updates,
-                promotions & more
+                Đăng ký nhận bản tin từ The Forager để nhận mẹo chăm cây hàng tháng, cập nhật cửa hàng,
+                khuyến mãi và nhiều thông tin khác
             </p>
         </div>
 
@@ -58,7 +58,7 @@ import { Logo } from "../assets/icons.js";
 
             <!-- Divider -->
             <div class="footer-wrap w-[90%] md:w-[80%] h-[1px] md:h-[2px]"></div>
-            <span class="text-xs sm:text-sm text-gray-600">©2025, All Right Reserved.</span>
+            <span class="text-xs sm:text-sm text-gray-600">©2025, Bảo lưu mọi quyền.</span>
         </div>
     </footer>
 </template>

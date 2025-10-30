@@ -15,13 +15,13 @@ const route = useRoute()
         <!-- Tabs -->
         <div class="flex flex-wrap justify-between items-center">
             <div class="flex flex-wrap gap-2">
-                <ButtonDark to="/" :active="route.path === '/'" >Outdoor Plant</ButtonDark>
-                <ButtonDark to="" :active="route.path === ''" >Indoor Plant</ButtonDark>
-                <ButtonDark to="" :active="route.path === ''" >Flower Pot</ButtonDark>
-                <ButtonDark to="" :active="route.path === ''" >Potted Plant</ButtonDark>
+                <ButtonDark to="/" :active="route.path === '/'" >Cây Ngoài Trời</ButtonDark>
+                <ButtonDark to="" :active="route.path === ''" >Cây Trong Nhà</ButtonDark>
+                <ButtonDark to="" :active="route.path === ''" >Chậu Hoa</ButtonDark>
+                <ButtonDark to="" :active="route.path === ''" >Cây Trong Chậu</ButtonDark>
             </div>
             <div class="mt-4 md:mt-0">
-                <ButtonDark to="" :active="route.path === ''" >See All</ButtonDark>
+                <ButtonDark to="" :active="route.path === ''" >Xem Tất Cả</ButtonDark>
             </div>
         </div>
 
@@ -29,31 +29,31 @@ const route = useRoute()
         <div class="flex flex-col md:flex-row gap-6 mt-10">
             <!-- Big Card -->
             <PlantCard
-                    size="large"
-                    :image="Outdoor1"
-                    title="Pet Friendly Plants"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis."
-                    tag="Piperaceae"
-                    class="w-full md:w-auto"
+                size="large"
+                :image="Outdoor1"
+                title="Cây Thân Thiện Với Thú Cưng"
+                description="Chúng tôi cung cấp các loại cây an toàn cho thú cưng, giúp không gian sống xanh, lành mạnh và dễ chăm sóc."
+                tag="Họ Hồ Tiêu"
+                class="w-full md:w-auto"
             />
 
             <!-- Small Cards -->
             <div class="flex flex-col md:flex-row gap-6 w-full md:w-auto">
                 <PlantCard
-                        size="small"
-                        :image="Outdoor2"
-                        title="Orchids"
-                        description="Orchids are easily everyones Favorite flowering plant, Find new orchids and orchids success items in this collection"
-                        tag="Araceae"
-                        class="w-full md:w-auto"
+                    size="small"
+                    :image="Outdoor2"
+                    title="Hoa Lan"
+                    description="Hoa lan là loài cây ưa chuộng nhất. Khám phá các loại hoa lan mới và các vật dụng chăm sóc hoa lan trong bộ sưu tập này."
+                    tag="Họ Ráy"
+                    class="w-full md:w-auto"
                 />
                 <PlantCard
-                        size="small"
-                        :image="Outdoor3"
-                        title="Succulents"
-                        description="All Succulents are cacti, but not all cacti are succulents. Both make low maintence house pants."
-                        tag="Moraceae"
-                        class="w-full md:w-auto"
+                    size="small"
+                    :image="Outdoor3"
+                    title="Cây Bó Xương/Succulent"
+                    description="Tất cả các loại succulent đều là xương rồng, nhưng không phải xương rồng nào cũng là succulent. Chúng đều là cây dễ chăm sóc, phù hợp trong nhà."
+                    tag="Họ Xương Rồng"
+                    class="w-full md:w-auto"
                 />
             </div>
         </div>

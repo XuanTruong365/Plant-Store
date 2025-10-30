@@ -64,18 +64,18 @@ const blogs = ref([
 
 <template>
     <div class="min-h-screen bg-gray-50">
-        <!-- Hero section -->
-        <BannerTop title="Blog" :image="ImageBanner" />
+        <!-- Phần Hero -->
+        <BannerTop title="Bài Viết" :image="ImageBanner" />
 
-        <!-- Blog list -->
+        <!-- Danh sách bài viết -->
         <section class="container mx-auto px-6 py-12">
             <div class="grid md:grid-cols-3 gap-8">
                 <div
-                        v-for="post in blogs"
-                        :key="post.id"
-                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition"
+                    v-for="post in blogs"
+                    :key="post.id"
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition"
                 >
-                    <img :src="post.image" alt="Blog image" class="w-full h-52 object-cover" />
+                    <img :src="post.image" alt="Hình ảnh blog" class="w-full h-52 object-cover" />
                     <div class="p-6 flex flex-col">
                         <h2 class="text-xl font-semibold text-gray-800 mb-2 hover:text-green-600 cursor-pointer">
                             {{ post.title }}
@@ -86,19 +86,19 @@ const blogs = ref([
                             <span>{{ post.date }}</span>
                         </div>
                         <router-link :to="`/blog/${post.id}`" class="mt-4 inline-block text-green-600 font-medium hover:underline">
-                            Read more →
+                            Xem thêm →
                         </router-link>
                     </div>
                 </div>
             </div>
 
-            <!-- Pagination -->
+            <!-- Phân trang -->
             <div class="mt-12 flex justify-center space-x-2">
-                <button class="px-4 py-2 rounded-lg bg-white border shadow hover:bg-green-50">Prev</button>
+                <button class="px-4 py-2 rounded-lg bg-white border shadow hover:bg-green-50">Trước</button>
                 <button class="px-4 py-2 rounded-lg bg-green-600 text-white shadow hover:bg-green-700">1</button>
                 <button class="px-4 py-2 rounded-lg bg-white border shadow hover:bg-green-50">2</button>
                 <button class="px-4 py-2 rounded-lg bg-white border shadow hover:bg-green-50">3</button>
-                <button class="px-4 py-2 rounded-lg bg-white border shadow hover:bg-green-50">Next</button>
+                <button class="px-4 py-2 rounded-lg bg-white border shadow hover:bg-green-50">Tiếp</button>
             </div>
         </section>
     </div>

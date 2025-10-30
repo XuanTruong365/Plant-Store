@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gradient-to-b from-green-50 to-white">
-    <BannerTop title="About" :image="ImageBanner" />
+    <BannerTop title="Liên Hệ" :image="ImageBanner" />
 
     <!-- Hero -->
     <section class="text-center py-16 px-6">

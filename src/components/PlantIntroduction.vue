@@ -6,18 +6,19 @@
                     class="block font-bold tracking-tighter leading-tight sm:leading-[100px] md:leading-[130px]
                text-3xl sm:text-5xl md:text-[109px]"
             >
-        Quality Plants and Curated Goods
-      </span>
+                Cây Chất Lượng và Sản Phẩm Chọn Lọc
+            </span>
 
             <!-- Subtitle -->
             <span
                     class="block mt-4 sm:mt-6 text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[26px] md:leading-[28px]
                max-w-full md:max-w-[940px]"
             >
-        We offer a carefully curated selection of indoor and outdoor plants,
-        hand crafted home goods that put quality ahead of quantity, and living art
-        made right here in the shop: terrariums, landscapes, arrangements, vessels, and holders.
-      </span>
+                Chúng tôi cung cấp bộ sưu tập cây trong nhà và ngoài trời được chọn lọc kỹ lưỡng,
+                các sản phẩm thủ công cho nhà cửa ưu tiên chất lượng hơn số lượng,
+                và nghệ thuật sống được tạo ngay tại cửa hàng: terrarium, cảnh quan, bố trí cây,
+                bình chứa và giá đỡ.
+            </span>
         </div>
 
         <!-- Video -->
